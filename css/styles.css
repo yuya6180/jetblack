@@ -53,8 +53,8 @@ header{
   }
   .head h1 a{
     font-size: 40px;
-    width: 400px;
-    margin-right: 200px;
+    width: 500px;
+    margin-right: 60px;
   }
   .hamburger{
     display: none;
