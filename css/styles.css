@@ -356,9 +356,6 @@ main {
 }
 /* ------------------section2---------------- */
 
-.about-us{
-    margin-top: 70px;
-}
 .about-us-h2{
     color: #fff;
     font-size: 38px;
@@ -366,6 +363,7 @@ main {
     letter-spacing: 6px;
     border-bottom: firebrick 3px solid;
     width: 90%;
+    margin-top: 70px;
 }
 .contain{
     margin-top: 60px;
@@ -395,7 +393,6 @@ main {
     .about-us-h2{
         font-size: 80px;
         width: 80%;
-        margin: 120px auto 30px;
         letter-spacing: 10px;
     }
     .about-us{
