@@ -23,6 +23,14 @@ header{
   .head{
     height: 80px;
   }
+  .head a img{
+    display: block;
+    height: 80px;
+  }
+  .head a img:hover{
+    opacity: .6;
+    transition: .3s;
+  }
   .head ul li{
     opacity: 1;
     display: flex;
@@ -40,9 +48,8 @@ header{
     margin-top: -10px;
     width: 160px;
     text-align: center;
-    margin-right: 20px;
     justify-content: center;
-    letter-spacing: 4px
+    letter-spacing: 2px
   }
   .navi-sec ul a:hover{
     opacity: .6;
@@ -54,17 +61,35 @@ header{
   .head h1 a{
     font-size: 40px;
     width: 500px;
-    margin-right: 60px;
   }
+  #red-h1{
+    font-size: 22px;
+    color: red;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    margin-top: -10px;
+  }
+ 
   .hamburger{
     display: none;
   }
 }
 .head h1{
-    padding: 26px 10px 10px;
-    font-size: 24px;
+    padding: 22px 16px 10px;
+    font-size: 22px;
     color: white;
     letter-spacing: 3px;
+    text-align: center;
+    margin-left: 10px;
+}
+.red-h1{
+    font-size: 18px;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    text-align: center;
 }
 .head h1 a:hover{
     opacity: .6;
@@ -74,6 +99,13 @@ header{
     color: inherit;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1440px){
+    .head img{
+        display: none;
+    } 
+}
+
 
 
 /* 
@@ -192,6 +224,31 @@ hamburger(ハンバーガーアイコン)
     visibility: visible;
   }
 
+  /* --------------ヘッダーアイコン----------- */
+
+  .head-icon{
+    display: flex;
+    margin: 6px 10px auto auto;
+    justify-content: right;
+  }
+  .head-icon img{
+    width: 28px;
+    padding: 6px;
+  }
+
+  @media screen and (min-width: 481px){
+    .head-icon img{
+        width: 46px;
+        padding: 12px;
+        margin-right: 10px;
+    }
+    .head-icon img:hover{
+        opacity: .7;
+        transition: .3s;
+        width: 50px;
+    }
+  }
+
 /* -------------main-------------- */
 
 main {
@@ -258,6 +315,45 @@ main {
     margin: 70px auto;
 }
 
+/* -----------------kasutamu---------------- */
+
+.kasutamu {
+    color: #fff;
+    width: 90%;
+    margin: 70px auto 0;
+    display: flex;
+}
+.kasutamu h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.kasutamu p{
+    font-size: 14px;
+    line-height: 18px;
+}
+.kasutamu img{
+    width: 90%;
+    padding: 4px;
+}
+@media screen and (min-width: 481px){
+    .kasutamu {
+        color: #fff;
+        width: 90%;
+        margin: 100px auto 0;
+        display: flex;
+    }
+    .kasutamu h2{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .kasutamu p{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .kasutamu img{
+        width: 80%;
+    }
+}
 /* ------------------section2---------------- */
 
 .about-us{
@@ -290,7 +386,7 @@ main {
 }
 .about-us p{
     width: 80%;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     line-height: 26px;
     margin: 0 auto;
@@ -405,6 +501,11 @@ main {
     }
     .conpany ul li{
         padding: 20px;
+        font-size: 20px;
+    }
+    .conpany ul li:nth-child(even){
+        font-size: 20px;
+        line-height: 34px;
     }
     .conpany h2{
         font-size: 40px;
@@ -483,14 +584,89 @@ a{
     }
 }
 
+/* -------------営業時間---------------- */
+
+.eigyo{
+    color: #fff;
+    padding-bottom: 10px;
+}
+.eigyo-out h3{
+    font-size: 24px;
+    color: #000;
+    background-color: rgb(199, 199, 199);
+    width: 280px;
+    margin: -120px auto 0;
+    padding: 2px;
+    text-align: center;
+}
+.eigyo ul{
+    text-align: center;
+    border-bottom: #fff 1px solid;
+    width: 80%;
+    margin: 40px auto;
+    padding-bottom: 50px;
+}
+.eigyo ul li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 28px;
+}
+.map iframe{
+    width: 80%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 481px){
+    .eigyo-in{
+        display: flex;
+        padding-bottom: 50px;
+    }
+    .eigyo-out h3{
+        font-size: 40px;
+        width: 440px;
+        margin-top: -220px;
+        background-color: rgb(199, 199, 199);
+    }
+    .eigyo{
+        width: 50%;
+    }
+    .eigyo ul{
+        width: 100%;
+        margin-top: 70px;
+        border-bottom: none;
+    }
+    .eigyo ul li{
+        font-size: 26px;
+        line-height: 50px;
+        letter-spacing: 4px;
+    }
+    .map{
+        width: 50%;
+        margin-top: 70px;
+        border-left: #fff 1px solid;
+    }
+    .map iframe{
+        height: 320px;
+        margin-top: 30px;
+    }
+}
+
 /* --------footer-------- */
 
 footer ul{
-    margin: -120px auto;
+    /* margin: -120px auto; */
     background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 50px 0 80px;
     border-top: #fff 2px solid;
+}
+footer h3{
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
 }
 footer ul li{
     width: 80%;
