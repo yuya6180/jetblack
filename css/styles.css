@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif;
 }
 header{
     position: fixed;
@@ -90,6 +90,7 @@ header{
     font-weight: 600;
     padding-bottom: 4px;
     text-align: center;
+    font-family: serif;
 }
 .head h1 a:hover{
     opacity: .6;
@@ -325,19 +326,25 @@ main {
     color: #fff;
     width: 90%;
     margin: 70px auto 0;
-    display: flex;
+    font-family: serif;
+    text-align: center;
 }
 .kasutamu h2{
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 .kasutamu p{
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 26px;
+    margin-bottom: 40px;
 }
 .kasutamu img{
     width: 90%;
     padding: 4px;
+}
+.kasutamu-img1{
+    display: none;
 }
 @media screen and (min-width: 481px){
     .kasutamu {
@@ -356,6 +363,7 @@ main {
     }
     .kasutamu img{
         width: 80%;
+        margin-left: 30px;
     }
 }
 /* ------------------section2---------------- */
@@ -414,7 +422,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin: 0 auto;
+        margin: 50px auto 0;
     }
 }
 
