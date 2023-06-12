@@ -360,7 +360,7 @@ main {
         display: flex;
     }
     .kasutamu h2{
-        font-size: 50px;
+        font-size: 36px;
         margin-bottom: 30px;
     }
     .kasutamu p{
@@ -376,12 +376,12 @@ main {
 
 .about-us-h2{
     color: #fff;
-    font-size: 38px;
-    margin-left: 4%;
+    font-size: 26px;
+    margin-left: 8%;
     letter-spacing: 6px;
     border-bottom: firebrick 3px solid;
     width: 90%;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 .contain{
     margin-top: 60px;
@@ -392,7 +392,7 @@ main {
     text-align: center;
     margin: 30px auto;
     letter-spacing: 4px;
-    border-bottom: firebrick 2px solid;
+    border-bottom: firebrick 1px solid;
     width: 80%;
 }
 .about-us img{
@@ -409,9 +409,10 @@ main {
 }
 @media screen and (min-width: 481px){
     .about-us-h2{
-        font-size: 80px;
+        font-size: 50px;
         width: 80%;
         letter-spacing: 10px;
+        margin-top: 80px;
     }
     .about-us{
         width: 400px;
@@ -481,8 +482,9 @@ main {
 
 /* ------------section4---------- */
 
-.conpany{
+.conpany ul{
     color: #fff;
+    padding: 30px 0;
 }
 .conpany h2{
     font-size: 24px;
@@ -532,18 +534,23 @@ main {
 /* ---------section5--------- */
 
 .contact{
-    margin: 80px auto 0;
+    margin: 20px auto 0;
     color: #fff;
+    position: relative;
 }
 .contact img{
     width: 100%;
     opacity: .5;
 }
 .contact-text{
-    transform: translateY(-250px);
+    
     font-size: 14px;
     text-align: center;
     line-height: 26px;
+    position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
 }
 .contact-text h3{
     font-size: 18px;
@@ -564,13 +571,19 @@ a{
 }
 
 @media screen and (min-width: 481px){
+    .contact{
+        position: relative;
+    }
     .contact img{
         height: 520px;
         background-position: center;
         background-size: cover;
     }
     .contact-text{
-        transform: translateY(-420px);
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .contact-text h3{
         font-size: 28px;
@@ -615,7 +628,6 @@ a{
     text-align: center;
 }
 .eigyo ul{
-    text-align: center;
     border-bottom: #fff 1px solid;
     width: 80%;
     margin: 40px auto;
@@ -647,7 +659,7 @@ a{
         background-color: rgb(199, 199, 199);
     }
     .eigyo{
-        width: 33%;
+        width: 50%;
     }
     .eigyo ul{
         width: 100%;
@@ -655,15 +667,18 @@ a{
         border-bottom: none;
     }
     .eigyo ul li{
-        font-size: 26px;
+        font-size: 20px;
         line-height: 50px;
         letter-spacing: 4px;
+        text-align: left;
+        padding: 6px;
+        margin-left: 10%;
     }
     .map{
-        width: 33%;
+        width: 50%;
         margin-top: 70px;
         border-left: #fff 1px solid;
-        border-right: #fff 1px solid;
+        /* border-right: #fff 1px solid; */
     }
     .map iframe{
         height: 320px;
@@ -676,7 +691,6 @@ a{
 .twitter-timeline{
     margin: 0 auto;
     padding: 50px 0;
-    border-top: 1px solid #fff;
     width: 70%;
 }
 .pc-twi{
@@ -686,7 +700,7 @@ a{
 @media screen and (min-width: 481px){
     
     .twi{
-        width: 33%;
+        width: 100%;
     }
     .twitter-timeline{
         border-top: none;
@@ -695,7 +709,7 @@ a{
         display: none;
     }
     .pc-twi{
-        padding: 10% 0 0 20%;
+        /* padding: 10% 0 0 20%; */
         display: block;
     }
 
@@ -729,17 +743,28 @@ footer ul li{
     color: #fff;
     background-color: #000;
     justify-content: center;
-    margin-top: -30px;
-    padding-bottom: 50px;
+    padding: 40px 20px;
 }
 .footer3 img{
-    width: 50px;
+    width: 80px;
 }
 .footer3-text p{
-    padding: 10px;
+    padding: 20px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
+}
+.top p{
+    margin: 30px 0 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 3px;
+    border: #fff 2px solid;
+    color: #fff;
+}
+.top p:hover{
+    opacity: .6;
+    transition: .3s;
 }
 @media screen and (min-width: 481px){
     footer ul li{
@@ -752,6 +777,31 @@ footer ul li{
         opacity: .6;
         transition: .3s;
         cursor: pointer;
+    }
+    .footer3-text p{
+        font-size: 26px;
+        padding: 90px 60px;
+        letter-spacing: 4px;
+    }
+    .footer3{
+        padding-left: 180px;
+        /* padding-right: 50px; */
+    }
+    .footer3 img{
+        width: 160px;
+        padding-top: 50px;
+    }
+    .top p{
+        margin: 120px 70px 60px;
+        font-size: 20px;
+        letter-spacing: 4px;
+        padding: 16px;
+        border: #fff 2px solid;
+        color: #fff;
+    }
+    .top p:hover{
+        opacity: .6;
+        transition: .3s;
     }
 }
 
