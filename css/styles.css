@@ -263,24 +263,52 @@ main {
 
 /* ----------section1---------------- */
 
-.main-head h2{
-    font-size: 52px;
-    margin-left: 8%;
-    letter-spacing: 4px;
+.head-text1{
+    display: none;
+}
+.head-text2{
+    display: none;
+}
+.head-text3{
+    display: none;
+}
+.head-text4{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
     line-height: 70px;
     color: white;
-    position: absolute;
-    top: 90px;
+    text-align: left;
+    margin: 80px auto 10px;
+    text-align: center;
+    border-left: #fff 4px solid;
+    width: 80%;
 }
-.main-head h3{
-    font-size: 20px;
-    margin-left: 8%;
-    letter-spacing: 6px;
-    margin-top: 30px;
+.head-text5{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 70px;
     color: white;
-    position: absolute;
-    top: 280px;
+    text-align: right;
+    margin: 60px auto;
+    text-align: center;
+    border-right: #fff 4px solid;
+    width: 80%;
 }
+.head-text6{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 34px;
+    color: white;
+    text-align: left;
+    margin: 30px auto 120px;
+    width: 80%;
+    border-left: #fff 4px solid;
+    text-align: center;
+}
+
 .main-head img{
     background-position: center;
     background-size: cover;
@@ -297,17 +325,7 @@ main {
 }
 
 @media screen and (min-width: 481px){
-    .main-head h2{
-        font-size: 90px;
-        line-height: 140px;
-        letter-spacing: 10px;
-        top: 150px;
-        left: 5%;
-    }
-    .main-head h3{
-        font-size: 38px;
-        right: 10%;
-    }
+    
     .main-head img{
         /* height: 600px; */
         background-position: center;
@@ -317,6 +335,49 @@ main {
         height: 600px;
         display: block;
         opacity: .4;
+    }
+
+    .head-text1{
+        font-size: 54px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        line-height: 70px;
+        color: white;
+        position: absolute;
+        top: 170px;
+        left: 8%;
+        display: block;
+    }
+    .head-text2{
+        font-size: 54px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        line-height: 70px;
+        color: white;
+        position: absolute;
+        top: 320px;
+        right: 12%;
+        display: block;
+    }
+    .head-text3{
+        font-size: 54px;
+        font-weight: 600;
+        letter-spacing: 6px;
+        line-height: 70px;
+        color: white;
+        position: absolute;
+        top: 470px;
+        left: 12%;
+        display: block;
+    }
+    .head-text4{
+        display: none;
+    }
+    .head-text5{
+        display: none;
+    }
+    .head-text6{
+        display: none;
     }
 }
 
@@ -383,30 +444,7 @@ main {
     width: 90%;
     margin-top: 40px;
 }
-.contain{
-    margin-top: 60px;
-}
-.about-us h3{
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    margin: 30px auto;
-    letter-spacing: 4px;
-    border-bottom: firebrick 1px solid;
-    width: 80%;
-}
-.about-us img{
-    width: 80%;
-    display: block;
-    margin: 30px auto;
-}
-.about-us p{
-    width: 80%;
-    font-size: 14px;
-    color: #fff;
-    line-height: 26px;
-    margin: 0 auto;
-}
+
 @media screen and (min-width: 481px){
     .about-us-h2{
         font-size: 50px;
@@ -414,23 +452,7 @@ main {
         letter-spacing: 10px;
         margin-top: 80px;
     }
-    .about-us{
-        width: 400px;
-    }
-    .about-us h3{
-        font-size: 22px;
-    }
-    .about-us p{
-        font-size: 18px;
-        line-height: 32px;
-    }
-    .sec-2{
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin: 50px auto 0;
-    }
+    
 }
 
 /* -----------section3-------------- */
