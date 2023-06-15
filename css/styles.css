@@ -565,14 +565,13 @@ main {
     opacity: .5;
 }
 .contact-text{
-    
     font-size: 14px;
     text-align: center;
-    line-height: 26px;
+    line-height: 22px;
     position: absolute;
-        top: 120px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .contact-text h3{
     font-size: 18px;
@@ -590,6 +589,17 @@ main {
 }
 a{
     text-decoration: none;
+}
+.tel a{
+    color: #fff;
+    font-size: 16px;
+    border-bottom: #fff 1px solid;
+    letter-spacing: 2px;  
+    padding: 0 10px;
+}
+.tel:hover{
+    opacity: .6;
+    transition: .3s;
 }
 
 @media screen and (min-width: 481px){
@@ -631,6 +641,20 @@ a{
     }
     a{
         text-decoration: none;
+    }
+    .tel{
+        margin-top: 40px;
+    }
+    .tel a{
+        color: #fff;
+        font-size: 18px;
+        border-bottom: #fff 1px solid;
+        letter-spacing: 2px;  
+        padding: 0 10px;
+    }
+    .tel:hover{
+        opacity: .6;
+        transition: .3s;
     }
 }
 
