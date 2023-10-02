@@ -565,8 +565,13 @@ main {
     position: relative;
 }
 .contact img{
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
     width: 100%;
-    opacity: .5;
+    height: 600px;
+    display: block;
+    opacity: .4;
 }
 .contact-text{
     font-size: 14px;
@@ -614,6 +619,7 @@ a{
         height: 520px;
         background-position: center;
         background-size: cover;
+        background-position: center;
     }
     .contact-text{
         position: absolute;
